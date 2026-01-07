@@ -27,12 +27,11 @@ public class EventController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         playerMoveAmt = playerMoveAction.ReadValue<Vector2>();
-        if(playerMoveAmt != Vector2.zero)
-        {
-            EventManager.instance.OnJoystickMoveCaller(playerMoveAmt);
-        }
+        
+        EventManager.instance.OnJoystickMoveCaller(playerMoveAmt);
+        
     }
 }

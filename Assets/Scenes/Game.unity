@@ -6691,6 +6691,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 375324583}
+  - component: {fileID: 375324584}
   - component: {fileID: 375324582}
   - component: {fileID: 375324581}
   - component: {fileID: 375324580}
@@ -6698,7 +6699,6 @@ GameObject:
   - component: {fileID: 375324578}
   - component: {fileID: 375324577}
   - component: {fileID: 375324576}
-  - component: {fileID: 375324584}
   m_Layer: 6
   m_Name: ZIS101Sport (1)
   m_TagString: Player
@@ -6920,9 +6920,9 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!4 &375324583
 Transform:
   m_ObjectHideFlags: 0
@@ -6975,6 +6975,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1229e23f96d59f14fa59ab67ea4eb2ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CarController
+  maxSpeed: 10
+  frontRightWheelCollider: {fileID: 1021071847}
+  frontLeftWheelCollider: {fileID: 139082542}
+  rearRightWheelCollider: {fileID: 474027153}
+  rearLeftWheelCollider: {fileID: 619608070}
+  frontRightWheelTransform: {fileID: 1621786890}
+  frontLeftWheelTransform: {fileID: 193192841}
+  rearRightWheelTransform: {fileID: 1508654953}
+  rearLeftWheelTransform: {fileID: 951031277}
+  maxMotorTorque: 700
+  maxStearingAngle: 10
+  brakeForce: 1400
 --- !u!1 &382557663
 GameObject:
   m_ObjectHideFlags: 0
